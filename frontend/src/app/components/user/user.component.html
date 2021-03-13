@@ -1,0 +1,83 @@
+<table *ngIf="userDetails" class="table-fill">
+  <thead>
+      <tr>
+          <th colspan="5" class="text-center">User Profile</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>patient timestamp</td>
+          <td>{{userDetails.Timestamp}}</td>
+      </tr>
+      <tr>
+          <td>patient name</td>
+          <td>{{userDetails["Personal info"].Name}}</td>
+      </tr>
+      <tr>
+          <td>patient email</td>
+          <td>{{userDetails["Personal info"].Email}}</td>
+      </tr>
+      
+      <tr>
+          <td>patient Phone</td>
+          <td>{{userDetails["Personal info"].Phone}}</td>
+      </tr>
+      
+      <tr>
+          <td>patient Age</td>
+          <td>{{userDetails["Personal info"].Age}}</td>
+      </tr>
+      
+      <tr>
+          <td>patient Heart Disease</td>
+          <td>{{userDetails["Medical Condition"]["Heart Disease"]}}</td>
+      </tr>
+      
+      <tr>
+          <td>patient Diabetics</td>
+          <td>{{userDetails["Medical Condition"].Diabetics}}</td>
+      </tr>
+      
+      <tr>
+          <td>patient email</td>
+          <td>{{userDetails["Medical Condition"]["Blood Pressure"]["High BP"]}}</td>
+      </tr>
+      
+      <tr>
+          <td>patient email</td>
+          <td>{{userDetails["Medical Condition"]["Blood Pressure"]["Low BP"]}}</td>
+      </tr>
+      
+      <tr>
+          <td>patient Height</td>
+          <td>{{userDetails["Health Status"].Height}}</td>
+      </tr>
+      
+      <tr>
+          <td>patient Weight</td>
+          <td>{{userDetails["Health Status"].Weight}}</td>
+      </tr>
+      
+      <tr>
+          <td>patient Pulse Rate</td>
+          <td>{{userDetails["Health Status"]["Pulse Rate"]}}</td>
+      </tr>
+
+      <tr>
+        <td>patient BP</td>
+        <td>{{userDetails["Health Status"].BP}}</td>
+    </tr>
+
+      <tr>
+        <td>patient BMI</td>
+        <td>{{userDetails["Health Status"].BMI}}</td>
+    </tr>
+
+
+      <tr>
+          <td colspan="2" class="text-center">
+              <input type="button" (click)="onLogout()" value="Logout" />
+          </td>
+      </tr>
+  </tbody>
+</table>

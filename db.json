@@ -1,0 +1,38 @@
+{
+  "medicalData": [
+    {
+      "patientid": "demo",
+      "data": {
+        "Timestamp": "2021-03-13 12:20:20",
+        "Personal info": {
+          "Name": "John Doe",
+          "Email": "john.doe@gmail.com",
+          "Phone": "9876543210",
+          "Age": "25 years"
+        },
+        "Medical Condition": {
+          "Heart Disease": false,
+          "Diabetics": true,
+          "Blood Pressure": {
+            "High BP": true,
+            "Low BP": false
+          }
+        },
+        "Health Status": {
+          "Height": "175 cms",
+          "Weight": "65 kg",
+          "Pulse Rate": "88 bpm",
+          "BP": "120/160",
+          "BMI": 25
+        }
+      }
+    }
+  ],
+  "Users": [
+    {
+      "email": "abcd@gmail.com",
+      "password": "$2a$10$2MO6rU4ojUiDLcdGH1H6uO2zlPfSpX6pNFmaO8Cm/V2ZlxnqELwDm",
+      "id": 1
+    }
+  ]
+}
